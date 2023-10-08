@@ -12,140 +12,142 @@
   <link rel="stylesheet" href="css/styles.css">
 
   <title>Frontend Mentor | Clipboard landing page</title>
-
 </head>
 
 <body>
-  <section class="block block-hero">
-    <div class="container">
-      <img src="images/logo.svg" alt="">
+
+  <main>
+
+    <section class="block block-hero">
+      <div class="container flex">
+        <img src="images/logo.svg" alt="">
+        <div class="block__header">
+          <h1 class="fc--dark fw--600 fs--900">A history of everything you copy</h1>
+          <p class="fs--400">Clipboard allows you to track and organize everything you
+            copy. Instantly access your clipboard on all your devices.</p>
+          <div class="grid grid--1x2 btn-group">
+            <button class="btn btn--ios bg--ios fs--500 fw--600 fc--white">Download for iOS</button>
+            <button class="btn btn--mac bg--mac fs--500 fw--600 fc--white">Download for Mac</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block block-features">
+      <div class="block__header container">
+        <h2 class="block__heading fc--dark fw--600 fs--800">Keep track of your snippets</h2>
+        <p class="block__tagline fs--400">
+          Clipboard instantly stores any item you copy in the cloud,
+          meaning you can access your snippets immediately on all your
+          devices. Our Mac and iOS apps will help you organize everything.
+        </p>
+      </div>
+      <div class="container grid grid--1x2">
+        <div class="grid block-feature__image">
+          <img src="images/image-computer.png" alt="">
+        </div>
+        <div class="features-group">
+          <article class="feature">
+            <h3 class="feature__heading fc--dark fw--600 fs--700">Quick Search</h3>
+            <p class="feature__description fs--300">
+              Easily search your snippets by content, category, web address, application, and more.
+            </p>
+          </article>
+          <article class="feature">
+            <h3 class="feature__heading fc--dark fw--600 fs--700">iCloud Sync</h3>
+            <p class="feature__description fs--300">
+              Instantly saves and syncs snippets across all your devices.
+            </p>
+          </article>
+          <article class="feature">
+            <h3 class="feature__heading fc--dark fw--600 fs--700">Complete History</h3>
+            <p class="feature__description fs--300">
+              Retrieve any snippets from the first moment you started using the app.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block container block-access">
       <div class="block__header">
-        <h1>A history of everything you copy</h1>
-        <p>Clipboard allows you to track and organize everything you
-          copy. Instantly access your clipboard on all your devices.</p>
+        <h2 class="block__heading fc--dark fw--600 fs--800">Access Clipboard Anywhere</h2>
+        <p class="block__tagline fs--400">Whether you’re on the go, or at your computer, you can access all your
+          Clipboard snippets in a few simple clicks.</p>
       </div>
-      <div class="grid grid--1x2 btn-group">
-        <button class="btn btn--ios">Download for iOS</button>
-        <button class="btn btn--mac">Download for Mac</button>
+      <div class="grid center">
+        <img src="images/image-devices.png" alt="Image of table and mobile devices">
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="block block-features">
-    <div class="block__header">
-      <h2 class="block__heading">Keep track of your snippets</h2>
-      <p class="block__tagline">
-        Clipboard instantly stores any item you copy in the cloud,
-        meaning you can access your snippets immediately on all your
-        devices. Our Mac and iOS apps will help you organize everything.
-      </p>
-    </div>
-    <div class="container grid grid--1x2">
-      <div class="block-feature__image">
-        <img src="images/image-computer.png" alt="">
+    <section class="block container block-tools">
+      <div class="block__header">
+        <h2 class="block__heading fc--dark fw--600 fs--800">Supercharge your workflow</h2>
+        <p class="block__tagline fs--400">We’ve got the tools to boost your productivity.</p>
       </div>
-      <div class="features-group">
-        <article class="feature">
-          <h3 class="feature__heading">Quick Search</h3>
-          <p class="feature__description">
-            Easily search your snippets by content, category, web address, application, and more.
-          </p>
-        </article>
-        <article class="feature">
-          <h3 class="feature__heading">iCloud Sync</h3>
-          <p class="feature__description">
-            Instantly saves and syncs snippets across all your devices.
-          </p>
-        </article>
-        <article class="feature">
-          <h3 class="feature__heading">Complete History</h3>
-          <p class="feature__description">
-            Retrieve any snippets from the first moment you started using the app.
-          </p>
-        </article>
+      <div class="grid grid--1x3 tools-group">
+        <div class="grid tools-item">
+          <img src="images/icon-blacklist.svg" alt="List icon">
+          <h3 class="fc--dark fw--600 fs--700">Create blacklists</h3>
+          <p class="fs--300">Ensure sensitive information never makes its way to your clipboard by excluding certain
+            sources.</p>
+        </div>
+        <div class="grid tools-item">
+          <img src="images/icon-text.svg" alt="Text icon">
+          <h3 class="fc--dark fw--600 fs--700">Plain text snippets</h3>
+          <p class="fs--300">Remove unwanted formatting from copied text f or a consistent look.</p>
+        </div>
+        <div class="grid tools-item">
+          <img src="images/icon-preview.svg" alt="Eye icon">
+          <h3 class="fc--dark fw--600 fs--700">Sneak preview</h3>
+          <p class="fs--300">Quick preview of all snippets on your Clipboard for easy access.</p>
+        </div>
       </div>
-    </div>÷
-  </section>
+    </section>
 
-  <section class="block container block-access">
-    <div class="block__header">
-      <h2 class="block__heading">Access Clipboard anywhere</h2>
-      <p class="block__tagline">
-        Whether you’re on the go, or at your computer, you can access all your Clipboard
-        snippets in a few simple clicks.
-      </p>
-    </div>
-    <img src="images/image-devices.png" alt="Image of table and mobile devices">
-  </section>
+    <section class="block container flex block-clients">
+      <img src="images/logo-google.png" alt="Google logo">
+      <img src="images/logo-ibm.png" alt="IBM logo">
+      <img src="images/logo-microsoft.png" alt="Microsoft logo">
+      <img src="images/logo-hp.png" alt="Hewlett Packard Enterprise logo">
+      <img src="images/logo-vector-graphics.png" alt="Vector Graphics logo">
+    </section>
 
-  <section class="block container block-tools">
-    <div class="block__header">
-      <h2 class="block__heading">Supercharge your workflow</h2>
-      <p class="block__tagline">We’ve got the tools to boost your productivity.</p>
-    </div>
-    <div class="grid tools-group">
-      <div class="grid tools-item">
-        <img src="images/icon-blacklist.svg" alt="List icon">
-        <h3>Create blacklists</h3>
-        <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
-      </div>
-      <div class="grid tools-item">
-        <img src="images/icon-text.svg" alt="Text icon">
-        <h3>Plain text snippets</h3>
-        <p>Remove unwanted formatting from copied text f or a consistent look.</p>
-      </div>
-      <div class="grid tools-item">
-        <img src="images/icon-preview.svg" alt="Eye icon">
-        <h3>Sneak preview</h3>
-        <p>Quick preview of all snippets on your Clipboard for easy access.</p>
-      </div>
-    </div>
-  </section>
+    <section class="block container">
 
-  <section class="block container flex block-users">
-    <img src="images/logo-google.png" alt="Google logo">
-    <img src="images/logo-ibm.png" alt="IBM logo">
-    <img src="images/logo-microsoft.png" alt="Microsoft logo">
-    <img src="images/logo-hp.png" alt="Hewlett Packard Enterprise logo">
-    <img src="images/logo-vector-graphics.png" alt="Vector Graphics logo">
-  </section>
+      <div class="block__header">
+        <h2 class="block__heading fc--dark fw--600 fs--800">Clipboard for iOS and Mac OS</h2>
+        <p class="block__tagline fs--400">Available for free on the App Store. Download for Mac or iOS, sync with iCloud
+          and you’re ready to start adding to your clipboard.</p>
 
-  <section class="block container">
-    <div class="block__header">
-      <h2 class="block__heading">Clipboard for iOS and Mac OS</h2>
-      <p class="block__tagline">Available for free on the App Store. Download for Mac or iOS, sync with iCloud
-        and you’re ready to start adding to your clipboard.</p>
-    </div>
-    <div class="grid grid--1x2 btn-group">
-      <button class="btn btn--ios">Download for iOS</button>
-      <button class="btn btn--mac">Download for Mac</button>
-    </div>
-  </section>
+        <div class="grid grid--1x2 btn-group">
+          <button class="btn btn--ios bg--ios fs--500 fw--600 fc--white">Download for iOS</button>
+          <button class="btn btn--mac bg--mac fs--500 fw--600 fc--white">Download for Mac</button>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
 
   <footer class="block footer">
     <div class="container flex">
       <img class="footer__brand-img" src="images/logo.svg" alt="Clipboard logo">
-      <ul class="grid list footer__links">
-        <li><a href="#">FAQs</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Press Kit</a></li>
-        <li><a href="#">Install Guide</a></li>
+      <ul class="grid footer__links">
+        <li><a class="fc--dark fs--500" href="#">FAQs</a></li>
+        <li><a class="fc--dark fs--500" href="#">Contact Us</a></li>
+        <li><a class="fc--dark fs--500" href="#">Privacy Policy</a></li>
+        <li><a class="fc--dark fs--500" href="#">Press Kit</a></li>
+        <li><a class="fc--dark fs--500" href="#">Install Guide</a></li>
       </ul>
-      <ul class="flex list social-media">
-        <li><a href="#"><img src="images/icon-facebook.svg" alt="Facebook logo"></a></li>
-        <li><a href="#"><img src="images/icon-twitter.svg" alt="Twitter logo"></a></li>
-        <li><a href="#"><img src="images/icon-instagram.svg" alt="Instagram logo"></a></li>
+      <ul class="flex social-media">
+        <li><a class="bg--dark icon--ig" href="#"></a></li>
+        <li><a class="bg--dark icon--tw" href="#"></a></li>
+        <li><a class="bg--dark icon--ig" href="#"></a></li>
       </ul>
     </div>
   </footer>
-
-  <!-- <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer> -->
 </body>
 
 </html>
